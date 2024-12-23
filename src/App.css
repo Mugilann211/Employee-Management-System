@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Employee Management Container */
+.employee-management {
+  max-width: 11800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+button {
+  background-color: #412595;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.4s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.table th,
+.table td {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Sort Icons */
+.table th span {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Filter Inputs */
+.table th input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.modal-header {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #e74c3c;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form button {
+  align-self: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .table th,
+  .table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+}
+
+/* General Button Styles */
+button {
+  font-size: 14px;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+
+/* Edit Button */
+button.edit-button {
+  background-color: #412595;
+  color: white;
+  margin: 10px;
+  
+}
+
+button.edit-button:hover {
+  background-color: #43badf;
+}
+
+/* Delete Button */
+button.delete-button {
+  background-color: #412595;
+  color: white;
+  
+}
+
+button.delete-button:hover {
+  background-color: #c0392b;
+}
